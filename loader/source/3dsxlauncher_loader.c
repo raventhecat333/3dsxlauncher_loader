@@ -53,7 +53,7 @@ Result patchPayload(u32 payloadsize){
 	printf("Executable %s will be loaded...\n",payloadPath);
 	u32 offset = 0xA000;
 	char path[10];
-	sprintf(path,"boot.3dsx");
+	sprintf(path,"3ds/ndsForwarder.3dsx");
 	u8 i = 0;
 	while (i < 9 && offset < payloadsize){
 		if (filebuffer[offset] == path[i]) i++;
